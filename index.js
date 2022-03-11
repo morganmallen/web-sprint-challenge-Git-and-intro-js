@@ -328,15 +328,8 @@ Use artistInfo to do the following:
 */
 
 function artistInfo(arr, name){
-  
-   arr.forEach((artist) => {
-    
-    if(artist.name === indexOf()) {
-      return arr[].bio
-    }
-  })
-  
-  
+  arr.indexOf(name)
+  return name.bio
 }
 console.log(artistInfo(artists, 'El Greco'))
 
