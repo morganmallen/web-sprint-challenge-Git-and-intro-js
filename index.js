@@ -328,10 +328,18 @@ Use artistInfo to do the following:
 */
 
 function artistInfo(arr, name){
-  arr.indexOf(name)
-  return name.bio
+  let result = [];
+  arr.forEach((artist) => {
+    
+    if(name === artist.name) {
+  
+      result.push(artist.bio)
+    }
+  })
+  console.log(result)
+  return result[0]
 }
-console.log(artistInfo(artists, 'El Greco'))
+console.log(artistInfo(artists, 'Kazimir Malevich'))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 9: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
